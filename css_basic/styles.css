@@ -1,21 +1,72 @@
+header{
+    background-color: rgb(56, 177, 177);
+    padding: 10px;
+}
+
+/* Make body a flex container with column direction */
 body{
+    display: flex;              /* Make body a flex container */
+    flex-direction: column;     /* Stack items vertically */
+    margin: 0%;                 /* Remove default margin*/
+    padding: 0%;                /* Remove default padding*/
+    height: 100vh;              /* Make body full height of viewport */
+}
+
+.footer_body{
     display: flex;
     flex-direction: column;
-    
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
 }
 
+/* Ensure header, main, and footer take the full width */
+.works_on_smartphone header, main, footer {
+    width: 100%;            /* Make each section take the entire width */  
+}
+
+.works_on_smartphone {
+    flex: 2;                /* Make aside take 2/3 of the width*/
+    overflow-y: auto;       /* allow vertical overflow*/
+}
+
+/* Make main a flex container with row direction */
 main{
-    display: flex;
-    flex-direction: row;
-    flex:auto
+    display: flex;          /* Make main a flex container */
+    flex-direction: row;    /* Stack items horizontally */
+    flex:auto               /* Allow main to adjust size automatically */
 }
 
+/* set article to take 2/3 of the width */
 article{
-    flex: 2;
-    overflow-y: auto
+    flex: 2;                 /* Make article 2/3 of the width size*/
+    overflow-y: auto;        /* Allow vertical scrolling*/   
 }
 
-aside{
-    flex: 1;
-    overflow-y: auto
+aside {
+    flex: 1;                /* Make article 1/3 of the width size*/
+    overflow-y: auto;       /* Allow vertical scrolling*/
+    background-color: #f0f0f0;
+    color: dimgray;
+    padding: 20px;
+}
+
+footer{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.logo{
+    font-size: 25px;
+    margin-right: 10px;
+}
+ 
+a:hover {
+    color: blue;
+}
+a:visited {
+    color: blueviolet;
 }
