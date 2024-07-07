@@ -15,7 +15,7 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #F2F2F2;
-    max-width: 1440px;
+    max-width: 1440px; 
     background: none;
     color: #ffffff;
     margin: 0px;            /* Removing all default margin*/
@@ -23,24 +23,24 @@
 }
 
 body {
-    background-image: url(image/background.png); /* Adding background image*/
-    background-repeat: no-repeat; /* Disable repeat*/
+    background-image: url(image/background.png);    /* Adding background image*/
+    background-repeat: no-repeat;                   /* Disable repeat*/
 }
 
 header {
-    width: auto;/* Auto adjusting the width */
-    height: auto;/* Auto adjusting the height */
-    padding-left: 171.59px;/* setting left padding */
-    padding-right: 171.59px;/* Setting right padding */
+    width: auto;                     /* Auto adjusting the width */
+    height: auto;                   /* Auto adjusting the height */
+    padding-left: 171.59px;         /* setting left padding */
+    padding-right: 171.59px;        /* Setting right padding */
 }
 
 
 /* ----------------- Nav ----------------- */
 nav {
-    display: flex; /* Putting it in a flex container normaly diplays in a row*/
-    align-items: center;/* aligning iteam in the flex to the center */
-    justify-content: space-between;/* Creating space in the middle of the container*/
-    margin-top: 35.02px;/* Setting a top margin*/
+    display: flex;                       /* Putting it in a flex container normaly diplays in a row*/
+    align-items: center;                /* aligning iteam in the flex to the center */
+    justify-content: space-between;     /* Creating space in the middle of the container*/
+    margin-top: 35.02px;                /* Setting a top margin*/
 }
 
 nav img {
@@ -58,15 +58,15 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;/* Removing all text decoration*/
-    height: 15px;
+    text-decoration: none;           /* Removing all text decoration*/
+    height: 15px;   
 }
 
 
 /* ------------------------ Container --------------- */
 section {
     display: flex;
-    flex-direction: column;/* changing the default flex from row to column */
+    flex-direction: column;         /* changing the default flex from row to column */
     align-items: center;
     width: 100%;
     justify-content: start;
@@ -81,8 +81,8 @@ section {
 }
 
 .banner-b1 h1 {
-    font: bold;/* making the font bold */
-    font-size: 120px;/* setting the size of thee font */
+    font: bold;                 /* making the font bold */
+    font-size: 120px;           /* setting the size of thee font */
     margin-top: 160px;
 }
 
@@ -93,7 +93,7 @@ section {
     display: flex;
     justify-content: space-between;
     width: 200px;
-    font-weight: bold; /* making the width of the font bold */
+    font-weight: bold;           /* making the width of the font bold */
 }
 
 .banner-b2 {
@@ -105,13 +105,13 @@ section {
 
 .banner-b2 h2 {
     font-size: 32px;
-    font-weight: lighter; /* making the weight of the font lighter */
+    font-weight: lighter;       /* making the weight of the font lighter */
 }
 
 .banner-b2 span {
     font-weight: bold;
     font-size: 32px;
-    color: var(--purple); /* importing the color from the root */
+    color: var(--purple);       /* importing the color from the root */
 }
 
 .pros {
@@ -126,12 +126,12 @@ section {
     align-items: center;
     width: 150px;
     height: 237px;
-    text-align: center; /* Aligning only the text to the center */
+    text-align: center;          /* Aligning only the text to the center */
     margin-top: 90px;
 }
 
 .pbox img {
-    border-radius: 75px; /*setting a border radius, mostly around shapesof imagess*/
+    border-radius: 75px;        /*setting a border radius, mostly around shapesof imagess*/
 }
 
 .quote {
@@ -139,7 +139,7 @@ section {
     flex-direction: row;
     background-color: var(--purple);
     height: 392px;
-    justify-content: center; /* Making the content of the flex box be at the center*/
+    justify-content: center;    /* Making the content of the flex box be at the center*/
 }
 
 .quote-text {
@@ -157,7 +157,7 @@ section {
 }
 
 .quote-text p {
-    font-style: italic; /* setting the style of the font to itali */
+    font-style: italic;         /* setting the style of the font to itali */
 }
 
 .video {
@@ -192,13 +192,6 @@ section {
     margin-right: 16.5px;
 }
 
-/* .video-list :nth-child(1){
-    position: relative;
-    top: 100px;
-    left: 100px;
-    width: 60px;
-    height: 60px;
-} */
 
 .vf {
     display: grid;
@@ -235,10 +228,6 @@ section {
 }
 
 
-/* .video-list img{
-    width: 255px;
-    height: 154px;
-} */
 .video-list h3 {
     color: var(--darkblue);
     font-weight: bold;
