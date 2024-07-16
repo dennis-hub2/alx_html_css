@@ -1,0 +1,126 @@
+/*CSS for 0-index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+ @import url('https://github.com/Christiana-tech/alx_html_css/blob/master/headphones/Spin-Cycle-OT-fontfacekit%20');
+
+ body{
+    background-image: url(./headphones_hero_1.jpg);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+
+}
+header {
+    display: flex;
+}
+
+
+
+.logo {
+    height: 35px;
+    width: auto;
+    margin-left: 300px;
+    margin-top: 25px;
+    }
+
+ nav a{
+        font-size:small;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        
+    }
+ nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+            width: 234px;
+            height: 29.46px;
+            margin-left: 500px;
+            margin-top: 40px;
+
+    }
+
+h1,h4 {
+    color:white;
+    text-align: center;
+
+}
+p {
+    color:white;
+    margin-left: 250px;
+    margin-right: 250px;
+
+}
+ .hero_section{
+    color:white;
+    text-align: center;
+    width: 100%;
+    justify-content:center;
+    margin-top: 250px;
+}
+button{
+    background-color: rgb(255, 101, 101);
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    
+    height: 45px;
+    width: 160px;
+    border: none;
+    border-radius: 23px;
+    box-shadow:inset;
+    margin-bottom: 50px;
+
+}
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  .navigationbar {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 357px;
+  }
+  .description p {
+      width: 335px;
+  }
+  .article {
+      padding-top: 250px;
+  }
+}
+
+/* ----------Hide navigation links & show hamburger icon on small screens---------- */
+
+@media screen and (max-width: 480px) {
+  .navigationlist {
+      display: none;
+  }
+  .toggle-btn {
+      display: block;
+  }
+  #menu-toggle:checked + .dropdown-menu {
+    display: block;
+    animation: slide-down 0.5s ease forwards;
+  }
+}
+
+/* ----------Adding small screens animations---------- */ 
+
+#menu-toggle {
+display: none;
+}
+
+#menu-toggle:checked + .toggle-btn + .dropdown-menu {
+max-height: 100px;
+} 
